@@ -1,5 +1,10 @@
 pipeline {
     agent any
+
+    tools {
+        nodejs 'Node24'
+    }
+
     triggers { pollSCM('* * * * *') }
     environment { CI = 'true' }
 
