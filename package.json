@@ -1,0 +1,39 @@
+{
+  "name": "my-library-management-system",
+  "version": "1.0.0",
+  "description": "Library Management System REST API for managing books and availability",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "jest",
+    "test:ci": "jest --ci --runInBand --colors",
+    "build": "node --check src/server.js && node --check src/app.js && node --check src/controllers/bookController.js && node --check src/services/bookService.js && node --check src/routes/bookRoutes.js && node --check src/data/books.js && node --check scripts/verify-endpoints.js",
+    "verify:endpoints": "node scripts/verify-endpoints.js"
+  },
+  "keywords": [
+    "library-management",
+    "books-api",
+    "rest-api",
+    "express",
+    "nodejs",
+    "devops"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ]
+  }
+}
