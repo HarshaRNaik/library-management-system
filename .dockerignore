@@ -1,0 +1,12 @@
+node_modules
+.npm-cache
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+coverage
+reports
+tests
+docs
+*.log

@@ -1,0 +1,11 @@
+---
+app_name: library-management-system
+app_port: 5001
+app_host: 0.0.0.0
+app_environment: production
+
+app_directory: /opt/library-management-system
+app_user: libraryapi
+app_group: libraryapi
+
+app_service_name: library-management-system

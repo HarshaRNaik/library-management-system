@@ -1,0 +1,7 @@
+---
+- name: Deploy Library Management System
+  hosts: library_servers
+  become: true
+
+  roles:
+    - library_management
